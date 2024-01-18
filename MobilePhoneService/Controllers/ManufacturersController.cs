@@ -6,7 +6,7 @@ using MobilePhoneService.Repository;
 
 namespace MobilePhoneService.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/proizvodjaci")]
     [ApiController]
     public class ManufacturersController : ControllerBase
     {
@@ -18,12 +18,12 @@ namespace MobilePhoneService.Controllers
             _mapper = mapper;
         }
         [HttpGet]
-        public IActionResult GetProizvodjaci()
+        public IActionResult GetManufacturers()
         {
             return Ok(_manufacturerRepository.GetAll().ProjectTo<ManufacturerDTO>(_mapper.ConfigurationProvider).ToList());
         }
         [HttpGet("{id}")]
-        public IActionResult GetProizvodjac(int id)
+        public IActionResult GetManufacturer(int id)
         {
             var proizvodjac = _manufacturerRepository.GetById(id);
             if (proizvodjac == null)
@@ -34,19 +34,19 @@ namespace MobilePhoneService.Controllers
         }
         [HttpGet]
         [Route("/api/info")]
-        public IActionResult GetProizvodjaciAndPhonesPrices(int granica)
+        public IActionResult GetManufacturersAndPhonesPrices(int granica)
         {
             return Ok(_manufacturerRepository.GetAllWithPhonesWithPrice(granica).ToList());
         }
         [HttpGet]
         [Route("/api/status")]
-        public IActionResult GetProizvodjaciAndPhonesCount()
+        public IActionResult GetManufacturersAndPhonesCount()
         {
             return Ok(_manufacturerRepository.GetAllWithPhonesCount().ToList());
         }
         [HttpGet]
         [Route("potrazi")]
-        public IActionResult GetProizvodjaciByName(string ime)
+        public IActionResult GetManufacturersByName(string ime)
         {
             return Ok(_manufacturerRepository.GetAllByName(ime).ProjectTo<ManufacturerDTO>(_mapper.ConfigurationProvider).ToList());
         }

@@ -9,7 +9,7 @@ using System.Data;
 
 namespace MobilePhoneService.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/telefoni")]
     [ApiController]
     public class PhonesController : ControllerBase
     {

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePhoneService", "MobilePhoneService\MobilePhoneService.csproj", "{B933C482-DAEA-4B4D-8126-B2FF95A03229}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobilePhoneService", "MobilePhoneService\MobilePhoneService.csproj", "{B933C482-DAEA-4B4D-8126-B2FF95A03229}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePhoneServiceTests", "MobilePhoneServiceTests\MobilePhoneServiceTests.csproj", "{EB2DD4EC-1FF0-4116-8E4C-38C4ACD9E823}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B933C482-DAEA-4B4D-8126-B2FF95A03229}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B933C482-DAEA-4B4D-8126-B2FF95A03229}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B933C482-DAEA-4B4D-8126-B2FF95A03229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB2DD4EC-1FF0-4116-8E4C-38C4ACD9E823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB2DD4EC-1FF0-4116-8E4C-38C4ACD9E823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB2DD4EC-1FF0-4116-8E4C-38C4ACD9E823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB2DD4EC-1FF0-4116-8E4C-38C4ACD9E823}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
